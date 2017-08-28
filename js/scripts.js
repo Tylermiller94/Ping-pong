@@ -13,17 +13,16 @@ function pingPong(numberInput){
     var outputString = "";
 
     for(var i = 1; i <= numberInput; i++){
-      if (i % 3 == 0){
-       outputString += "<li>ping</li>";
-       //if input is dividable by 3 add Ping
-
-    }else if (i % 5 == 0){
-      outputString += "<li>pong</li>";
+      if (i % 15 == 0){
+        outputString += "<li>Ping-Pong!</li>";
+         //if output is dividable by 15 add pingpong
+    } else if (i % 5 == 0){
+      outputString += "<li>Pong!</li>";
       //if input is dividable by 5 add pong
 
-    } else if (i % 15 == 0){
-      outputString += "<li>pingpong</li>";
-       //if output is dividable by 15 add pingpong
+    } else if (i % 3 == 0){
+       outputString += "<li>Ping!</li>";
+       //if input is dividable by 3 add Ping
 
      } else  {
        outputString += "<li>" + i + "</li>";
